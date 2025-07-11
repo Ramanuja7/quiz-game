@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="h.css">
+</head>
+<body>
+  <section class="header">
+        <nav>
+            <a href="home.html"><h1 id="pok">QUIZZERS.</h1></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+       
+    
+
+  
+<center>
+   <div class="quiz-box">
+    <div id="progress-bar"><div id="progress"></div></div>
+    <h2 id="question">Question text</h2>
+    <form id="options"></form>
+    <div id="timer">10</div>
+    <button id="next-btn">Next</button>
+  </div>
+
+  <div id="result-modal" class="modal hide">
+    <div class="modal-content">
+      <h2>Quiz Completed!</h2>
+      <div id="stars"></div>
+      <p id="final-score"></p>
+      <h3>Leaderboard</h3>
+      <ul id="leaderboard"></ul>
+      <button onclick="restartQuiz()">Restart</button>
+    </div>
+  </div></center></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
